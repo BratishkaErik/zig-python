@@ -1,0 +1,15 @@
+// SPDX-FileCopyrightText: 2025 Eric Joldasov
+//
+// SPDX-License-Identifier: 0BSD
+
+.{
+    .name = "zig_python",
+    .version = "0.1.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSES/0BSD.txt",
+        // "LICENSES/CC0-1.0.txt" not added here because all files
+        // under this license are not included here (README and CI).
+    },
+}

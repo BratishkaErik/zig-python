@@ -1,0 +1,5 @@
+# SPDX-FileCopyrightText: 2025 Eric Joldasov
+#
+# SPDX-License-Identifier: 0BSD
+.zig-cache/
+zig-out/
