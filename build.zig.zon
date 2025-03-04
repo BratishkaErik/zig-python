@@ -3,8 +3,9 @@
 // SPDX-License-Identifier: 0BSD
 
 .{
-    .name = "zig_python",
+    .name = .zig_python,
     .version = "0.1.0",
+    .fingerprint = 0xe884633fc47265a6,
     .paths = .{
         "build.zig",
         "build.zig.zon",

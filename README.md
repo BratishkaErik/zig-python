@@ -17,7 +17,7 @@ needed to find `Python.h` and shared library.
 By default it skips running other methods if previous resulted
 in at least one directory/library found.
 
-Tested with Zig version `0.14.0-dev.3237+ddff1fa4c`.
+Tested with Zig version `0.14.0-dev.3460+6d29ef0ba`.
 
 > [!IMPORTANT]
 > This plugin does not (yet?) handle library install and naming
