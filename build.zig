@@ -49,7 +49,7 @@ pub fn link_everything(mod: *std.Build.Module, python_version: []const u8) error
     );
 }
 
-fn get_python_info(b: *std.Build, python_version: []const u8, target: std.Target) struct {
+const PythonInfo = struct {
     search_paths: struct {
         /// For example: -I/usr/include/python3.11
         include: [][]const u8,
@@ -58,7 +58,9 @@ fn get_python_info(b: *std.Build, python_version: []const u8, target: std.Target
     },
     /// For example: -ldl -lm
     link_libraries: [][]const u8,
-} {
+};
+
+fn get_python_info(b: *std.Build, python_version: []const u8, target: std.Target) PythonInfo {
     const arena = b.graph.arena;
     var includes: std.ArrayListUnmanaged([]const u8) = .empty;
     var libraries_path: std.ArrayListUnmanaged([]const u8) = .empty;
