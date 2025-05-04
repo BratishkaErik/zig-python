@@ -8,6 +8,10 @@ on:
     branches: "**"
   pull_request:
     branches: [ main ]
+
+permissions:
+  contents: read
+
 jobs:
   compliance:
     runs-on: ubuntu-24.04
